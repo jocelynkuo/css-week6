@@ -1,0 +1,53 @@
+.index-title {
+  font-size: 100px;
+}
+
+.box {
+  height: 200px;
+  background-color: blue;
+  border: 4px solid orange;
+}
+
+.banner {
+  min-height: 100vh;
+
+  background-image: url("/assets/images/index-bg//index-hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.popular-tool {
+  background:
+    linear-gradient(#100c24, #110d2580),
+    url("/assets/images/index-bg/landing-highlight-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.accordion-item {
+  border: 0;
+  backdrop-filter: blur(12px);
+}
+
+.accordion-button {
+  background-color: rgba($white, 0.08);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba($white, 0.12);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+
+.w-64px {
+  width: 64px;
+}

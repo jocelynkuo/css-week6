@@ -1,0 +1,47 @@
+/* 標籤的基本樣式 */
+body {
+  letter-spacing: 0.05em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+//components
+
+// customized btn
+.btn-outlined {
+  border: 1px solid $primary-100;
+  background-color: transparent;
+  color: $primary-100;
+  border-radius: 1000px;
+}
+
+.btn-outlined:hover {
+  background-color: $primary-100;
+  color: $neutral-600;
+}
+//
+
+.input-base {
+  background-color: $white;
+  border: 1px solid rgba($white, 0.2);
+  color: $neutral-600;
+  border-radius: 8px;
+}
+
+.input-base::placeholder {
+  color: $neutral-300;
+}
+
+.input-base:focus {
+  background-color: $white;
+  border: 1px solid rgba($white, 0.2);
+  color: $neutral-600;
+}

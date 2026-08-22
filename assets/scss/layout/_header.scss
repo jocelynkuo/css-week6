@@ -1,0 +1,63 @@
+.logo {
+  width: 152px;
+}
+
+//手機版樣式
+.offcanvas-body {
+  .dropdown-menu {
+    display: block;
+    border: 0px;
+
+    .dropdown-item:hover {
+      background-color: rgba($white, 0.08);
+    }
+  }
+}
+//電腦版樣式
+
+@media (min-width: 992px) {
+  .offcanvas-body {
+    .dropdown-menu:not(.show) {
+      display: none;
+    }
+
+    .dropdown-menu {
+      border: 1px solid rgba($white, 0.12);
+      backdrop-filter: blur(24px);
+    }
+
+    .dropdown-item {
+      min-width: 224px;
+    }
+  }
+}
+
+.offcanvas {
+  backdrop-filter: blur(24px);
+}
+
+@media (min-width: 992px) {
+  .offcanvas {
+    backdrop-filter: unset;
+  }
+}
+
+.navbar-control-input {
+  padding: 9px 45px;
+}
+
+.navbar-contrl-icon {
+  left: 13px;
+}
+
+.navbar-collapse {
+  background-color: rgba($white, 0.12);
+  backdrop-filter: blur(24px);
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    background-color: unset;
+    backdrop-filter: unset;
+  }
+}
